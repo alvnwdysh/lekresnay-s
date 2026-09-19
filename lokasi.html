@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Kres Nay's | Lokasi</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap  " rel="stylesheet">
+   
+
+    <link rel="stylesheet" href="lokasi.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">🥞</div>
+        <h2>LeKresNay's</h2>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Le Kres Nay's</a>
+
+            <nav class="nav-menu">
+                <a href="index.html">Beranda</a>
+                <a href="index.html#tentang">Tentang</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#proses">Proses</a>
+                <a href="index.html#testimoni">Testimoni</a>
+                <a href="lokasi.html" class="active">Kunjungi</a>
+            </nav>
+
+            <a href="index.html#menu" class="nav-button">Pesan Sekarang</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Beranda</a>
+        <a href="index.html#tentang">Tentang</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#proses">Proses</a>
+        <a href="index.html#testimoni">Testimoni</a>
+        <a href="lokasi.html">Kunjungi</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="location-hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+            <span class="hero-small">KUNJUNGI KAMI • LE KRES NAY'S</span>
+            <h1>Temukan Cabang<br>Terdekat</h1>
+            <p>
+                Pilih cabang Le Kres Nay's yang paling dekat denganmu
+                dan nikmati kue lekker hangat bersama orang tersayang.
+            </p>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <main class="location-section" id="location">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">LOKASI KAMI</span>
+                <h2>Temukan Kami di Sini</h2>
+                <p>
+                    Kami hadir di beberapa lokasi pilihan untuk menemani
+                    waktu santai dan cerita kamu.
+                </p>
+            </div>
+
+            <!-- SEARCH -->
+            <div class="search-wrapper reveal">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari nama cabang atau lokasi..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="location-grid" id="locationGrid">
+
+                <!-- CABANG 1 -->
+                <article class="location-card reveal"
+                    data-search="kemanggisan cluster kemanggisan jakarta barat">
+
+                    <div class="location-image image-one">
+                        <div class="image-number">01</div>
+                        <span>LE KRES NAY'S</span>
+                    </div>
+
+                    <div class="location-content">
+                        <span class="location-type">CABANG UTAMA</span>
+                        <h3>Cluster Kemanggisan</h3>
+
+                        <p class="location-address">
+                            <span>⌖</span>
+                            Area Cluster Kemanggisan
+                        </p>
+
+                        <div class="location-meta">
+                            <div>
+                                <small>JAM OPERASIONAL</small>
+                                  <strong>Weekday | 14.00 - 21.00 </strong>
+                                <br>
+                                <strong>Wekkend | 06.00 - 11.00 </strong>
+                            </div>
+
+                            <span class="status">
+                                ● Buka Hari Ini
+                            </span>
+                        </div>
+
+                        <div class="card-buttons">
+                            <a class="direction-btn"
+                               href="https://maps.app.goo.gl/TEEHR6pWvs3c4GeZ6?g_st=ic"
+                               target="_blank">
+                                Petunjuk Arah ↗
+                            </a>
+
+                            <button class="choose-btn"
+                                data-branch="Cluster Kemanggisan">
+                                Pilih Cabang
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CABANG 2 -->
+                <article class="location-card reveal"
+                    data-search="cikini cluster cikini jakarta pusat">
+
+                    <div class="location-image image-two">
+                        <div class="image-number">02</div>
+                        <span>LE KRES NAY'S</span>
+                    </div>
+
+                    <div class="location-content">
+                        <span class="location-type">CABANG</span>
+                        <h3>Cluster Cikini</h3>
+
+                        <p class="location-address">
+                            <span>⌖</span>
+                            Area Cluster Cikini
+                        
+                        </p>
+
+                        <div class="location-meta">
+                            <div>
+                                <small>JAM OPERASIONAL</small>
+                                <strong>Weekday | 14.00 - 21.00 </strong>
+                                <br>
+                                <strong>Wekkend | 06.00 - 11.00 </strong>
+                            </div>
+
+                            <span class="status">
+                                ● Buka Hari Ini
+                            </span>
+                        </div>
+
+                        <div class="card-buttons">
+                            <a class="direction-btn"
+                               href="https://maps.app.goo.gl/SkEM48FFz6s1GkQP8?g_st=aw"
+                               target="_blank">
+                                Petunjuk Arah ↗
+                            </a>
+
+                            <button class="choose-btn"
+                                data-branch="Cluster Cikini">
+                                Pilih Cabang
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CABANG 3 -->
+                <article class="location-card reveal"
+                    data-search="metland cibitung gerbang perumahan metland cibitung bekasi">
+
+                    <div class="location-image image-three">
+                        <div class="image-number">03</div>
+                        <span>LE KRES NAY'S</span>
+                    </div>
+
+                    <div class="location-content">
+                        <span class="location-type">CABANG</span>
+                        <h3>Gerbang Metland Cibitung</h3>
+
+                        <p class="location-address">
+                            <span>⌖</span>
+                            Depan Gerbang Perumahan Metland Cibitung
+                        </p>
+
+                        <div class="location-meta">
+                            <div>
+                                <small>JAM OPERASIONAL</small>
+                                <strong>Weekday | 14.00 - 21.00 </strong>
+                                <br>
+                                <strong>Wekkend | 06.00 - 11.00 </strong>
+                            </div>
+
+                            <span class="status">
+                                ● Buka Hari Ini
+                            </span>
+                        </div>
+
+                        <div class="card-buttons">
+                            <a class="direction-btn"
+                               href="https://maps.app.goo.gl/vREAKmpKPZRWztYz6?g_st=ic"
+                               target="_blank">
+                                Petunjuk Arah ↗
+                            </a>
+
+                            <button class="choose-btn"
+                                data-branch="Gerbang Metland Cibitung">
+                                Pilih Cabang
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="not-found" id="notFound">
+                <span>⌕</span>
+                <h3>Lokasi tidak ditemukan</h3>
+                <p>Coba gunakan nama cabang atau lokasi lainnya.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="location-cta">
+        <div class="cta-overlay"></div>
+
+        <div class="cta-content reveal">
+            <span>TEMUKAN CERITAMU</span>
+            <h2>Satu Kunjungan,<br>Banyak Cerita</h2>
+            <a href="index.html#menu" class="btn-light">Lihat Menu →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <h2>Le Kres Nay's</h2>
+                <p>Kue lekker tradisional dengan cita rasa yang selalu ingin dibagikan.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <a href="index.html">Beranda</a>
+                <a href="index.html#tentang">Tentang</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="#location">Lokasi</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Ikuti Kami</h4>
+                <a href="https://www.instagram.com/lekres_nays/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@lekker_metlandcibitung" target="_blank">TikTok</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p>WhatsApp</p>
+                <a href="https://wa.me/6289510288524" target="_blank">
+                    +62 895-1028-8524
+                </a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © <span id="year"></span> Le Kres Nay's. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- BRANCH MODAL -->
+    <div class="modal" id="branchModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+
+            <span class="section-label">CABANG DIPILIH</span>
+            <h2 id="selectedBranch">Cluster Kemanggisan</h2>
+
+            <p>
+                Cabang ini telah dipilih. Kamu bisa melanjutkan
+                untuk melihat menu dan melakukan pemesanan.
+            </p>
+
+            <div class="modal-buttons">
+                <a href="index.html#menu" class="modal-primary">
+                    Lihat Menu →
+                </a>
+
+                <button id="saveBranch" class="modal-secondary">
+                    Simpan Pilihan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lokasi.js"></script>
+</body>
+</html>
